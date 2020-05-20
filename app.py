@@ -13,7 +13,7 @@ wsgi_app = app.wsgi_app
 @app.route('/')
 def hello():
     """Renders a sample page."""
-    return "Hello World!!!"
+    return "Hello World!!! Yes!"
 
 if __name__ == '__main__':
     import os
@@ -22,4 +22,4 @@ if __name__ == '__main__':
         PORT = int(os.environ.get('SERVER_PORT', '5555'))
     except ValueError:
         PORT = 5555
-    app.run(HOST, PORT)
+    app.run(HOST, PORT, debug=True)
