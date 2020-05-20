@@ -33,6 +33,7 @@
     <Content Include="requirements.txt" />
     <Content Include="templates\index.html" />
     <Content Include="templates\about.html" />
+    <Content Include="templates\base.html" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|VisualStudio|venv" />

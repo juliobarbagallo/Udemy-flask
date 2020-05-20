@@ -13,7 +13,8 @@ wsgi_app = app.wsgi_app
 @app.route('/')
 def hello():
     """Renders a sample page."""
-    return render_template('index.html')
+    rockers=['richards', 'ronny', 'jagger']
+    return render_template('index.html', rockers=rockers)
 
 @app.route('/about')
 def about():
