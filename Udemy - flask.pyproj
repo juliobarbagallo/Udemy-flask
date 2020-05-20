@@ -34,6 +34,7 @@
     <Content Include="templates\index.html" />
     <Content Include="templates\about.html" />
     <Content Include="templates\base.html" />
+    <Content Include="templates\css.html" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|VisualStudio|venv" />

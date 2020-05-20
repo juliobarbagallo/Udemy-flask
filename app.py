@@ -4,7 +4,9 @@ It contains the definition of routes and views for the application.
 """
 
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap
 app = Flask(__name__)
+Bootstrap(app)
 
 # Make the WSGI interface available at the top level so wfastcgi can get it.
 wsgi_app = app.wsgi_app
@@ -19,6 +21,10 @@ def hello():
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+@app.route('/css')
+def css():
+    return render_template('css.html')
 
 if __name__ == '__main__':
     import os
